@@ -1,0 +1,103 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f5; /* Light greyish-blue background */
+    margin: 0;
+    padding: 20px;
+    color: #333333; /* Dark grey text */
+}
+
+h1 {
+    text-align: center;
+    color: #32CD32; /* Green color */
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-card {
+    background: #ffffff; /* White background for cards */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.product-card h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #FF4500; /* Red color */
+}
+
+.product-card p {
+    margin: 5px 0;
+    color: #555555; /* Medium grey text */
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #32CD32; /* Green color */
+}
+
+.navbar {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent background */
+    backdrop-filter: blur(10px); /* Optional: adds a blur effect for better readability */
+    border-bottom: 1px solid #dddddd; /* Light border for separation */
+}
+
+.navbar .navbar-brand {
+    color: #32CD32; /* Green color */
+    font-size: 1.2em;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar .navbar-brand:hover {
+    color: #7CFC00; /* Lighter green color */
+}
+
+.container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff; /* White background for container */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #32CD32; /* Green color */
+}
+
+p {
+    color: #333333; /* Dark grey text */
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .navbar-brand {
+        margin: 10px 0;
+    }
+}
